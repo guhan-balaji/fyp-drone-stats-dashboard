@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*.bg {
+  position: absolute;
+  background-image: url("../images/drone.jpg");
+  background-size: 100% 100%;
+  z-index: -1;
+  min-width: 100%;
+  filter: blur(5px);
+  min-height: 100%;
+}
+
+.container-fluid {
+  padding: 0 1.75rem;
+}
+
+.parent {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 2.2fr 5.7fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 1.25rem;
+  grid-row-gap: 1px;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.div2 {
+  grid-area: 1 / 2 / 2 / 6;
+}
+
+div .div1,
+.div2 {
+  border-style: inset;
+  border-width: 3px;
+  margin-top: 2rem;
+  height: 33rem;
+  box-shadow: 10px 10px 50px 10px white;
+}
+
+.buttons {
+
+  text-align: center;
+  padding: 1.2rem;
+}
+
+.btn {
+  border-radius: 3rem;
+  padding: 0.75rem 1rem;
+  margin: 1rem;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #c6a9a3;
+  color: white;
+  font-weight: bold;
+}
+
+.div1 {
+  filter: opacity(0.7);
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.div1>div {
+  display: flex;
+}
+
+.div1>div>p {
+  margin: 3px;
+}
